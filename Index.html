@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Code Blog</title>
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding:14px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+/* ===== LOGO (Matched to Screenshot) ===== */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    font-size:18px;
+}
+
+.logo-box{
+    width:34px;
+    height:30px;
+    
+    border-radius:4px;
+    border:2px solid rgba(255,255,255,0.2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7fd3ff;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:15px;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container{
+    display:flex;
+    padding:30px 40px;
+}
+
+/* Sidebar */
+.sidebar{
+    width:230px;
+}
+
+.sidebar h3{
+    margin-bottom:15px;
+    color:#333;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:12px;
+    color:#444;
+    cursor:pointer;
+}
+
+.sidebar ul li:hover{
+    color:#2a5298;
+}
+
+/* ===== CARD AREA ===== */
+.main-content{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:620px;
+    padding:20px;
+    border-radius:20px;
+    border:4px solid #1e3c72;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.card h1{
+    font-size:38px;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.card img{
+    width:260px;
+    height:auto;
+    margin-bottom:25px;
+}
+
+/* Button */
+.btn{
+    background:linear-gradient(to bottom,#4CAF50,#2e7d32);
+    color:white;
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* ===== FOOTER (Matched to Screenshot) ===== */
+.footer{
+    text-align:center;
+    margin-top:20px;
+    padding:20px 0 30px 0;
+    background:#f4f4f4;
+}
+
+/* Thin divider line */
+.footer-line{
+    width:80%;
+    height:1px;
+    background:#d9d9d9;
+    margin:0 auto 20px auto;
+}
+
+.footer p{
+    color:#333;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+/* Social icons */
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    font-size:22px;
+    color:#1e3c72;
+}
+
+.social-icons i{
+    cursor:pointer;
+}
+
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+
+    <div class="logo">
+        <div class="logo-box">&lt;/&gt;</div>
+        My Code Blog
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li>HTML Basics</li>
+            <li>CSS Grid</li>
+            <li>JavaScript Intro</li>
+            <li>Web Accessibility</li>
+        </ul>
+    </div>
+
+    <!-- Card -->
+    <div class="main-content">
+        <div class="card">
+            <h1>Welcome to my<br>coding journey!</h1>
+
+            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16"
+                 alt="Puppy">
+
+            <br>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+    <div class="footer-line"></div>
+
+    <p>© 2024 My Coding Journey. All rights reserved.</p>
+
+    <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-telegram"></i>
+    </div>
+
+</footer>
+
+</body>
+</html>
